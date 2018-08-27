@@ -37,7 +37,7 @@ def webhook():
     gc = gspread.authorize(credentials)
     
     # # 共有設定したスプレッドシートの名前を指定する
-    worksheet = gc.open("Google Assistant Commands").get_worksheet(1)
+    worksheet = gc.open("sakaezaiko").get_worksheet(1)
 
     cell = worksheet.find(medicine_name)
 
