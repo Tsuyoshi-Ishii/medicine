@@ -30,7 +30,7 @@ def webhook():
     parameters = result.get("parameters")
     medicine_name = parameters.get("medicine_name")
 
-    scope = ['https://spreadsheets.google.com/feeds']
+    scope = ['https://drive.google.com/open?id=1RseqOYQvR075Phjz3HlKPHnOfEVdo6e4qwOoVV4Es6E']
     
     #ダウンロードしたjsonファイルを同じフォルダに格納して指定する
     credentials = ServiceAccountCredentials.from_json_keyfile_name('xxxxxxxxxx.json', scope)
